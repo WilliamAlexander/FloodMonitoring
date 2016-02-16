@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'jacoco-android'
 
 android {
     compileSdkVersion 23
@@ -14,6 +15,9 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug{
+            testCoverageEnabled = true
+        }
     }
     lintOptions {
         abortOnError false
@@ -26,6 +30,7 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:1.10.19'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
     compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
@@ -35,4 +40,5 @@ dependencies {
     compile 'io.reactivex:rxjava:1.0.10'
     compile 'com.jakewharton.timber:timber:3.1.0'
     compile 'com.google.android.gms:play-services-maps:8.3.0'
+    androidTestCompile 'junit:junit:4.12'
 }
