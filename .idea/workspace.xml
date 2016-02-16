@@ -32,9 +32,11 @@
       <file leaf-file-name="FloodAreaExpandedTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodAreaExpandedTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09375">
-              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.9375">
+              <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -1836,7 +1838,7 @@
     <property name="android.project.structure.last.selected" value="library" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
-  <component name="RunManager" selected="JUnit.eu.fiskur.floodmonitoringapi in library">
+  <component name="RunManager" selected="JUnit.FloodAreaExpandedTests">
     <configuration default="false" name="QuickHulkTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <option name="TESTING_TYPE" value="2" />
@@ -1867,32 +1869,6 @@
       <method>
         <option name="Make" enabled="false" />
       </method>
-    </configuration>
-    <configuration default="false" name="FloodUtilsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="eu.fiskur.floodmonitoringapi.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="library" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="eu.fiskur.floodmonitoringapi" />
-      <option name="MAIN_CLASS_NAME" value="eu.fiskur.floodmonitoringapi.FloodUtilsTests" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
     </configuration>
     <configuration default="false" name="eu.fiskur.floodmonitoringapi in library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1934,6 +1910,32 @@
       <option name="MAIN_CLASS_NAME" value="eu.fiskur.floodmonitoringapi.FloodAreaExpandedTests" />
       <option name="METHOD_NAME" value="testFloodAreaExpanded" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="FloodAreaExpandedTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eu.fiskur.floodmonitoringapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="library" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.fiskur.floodmonitoringapi" />
+      <option name="MAIN_CLASS_NAME" value="eu.fiskur.floodmonitoringapi.FloodAreaExpandedTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -2134,17 +2136,17 @@
       <item index="0" class="java.lang.String" itemvalue="Android Tests.ApplicationTest" />
       <item index="1" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
       <item index="2" class="java.lang.String" itemvalue="Groovy.build" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.FloodUtilsTests" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
-        <item index="2" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
-        <item index="3" class="java.lang.String" itemvalue="Groovy.build" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.FloodUtilsTests" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
+        <item index="3" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
+        <item index="4" class="java.lang.String" itemvalue="Groovy.build" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
@@ -2172,7 +2174,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2197,7 +2199,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37195995" sideWeight="0.765748" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2321,9 +2323,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodAreaExpandedTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09375">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.9375">
+          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

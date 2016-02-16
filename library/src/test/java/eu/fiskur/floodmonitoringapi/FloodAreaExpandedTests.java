@@ -31,6 +31,42 @@ public class FloodAreaExpandedTests {
         Assert.assertEquals(-2.9931457f, floodAreaExpanded.getLon());
     }
 
+    @Test
+    public void testSetters(){
+        FloodAreaExpanded floodAreaExpanded = new FloodAreaExpanded();
+        floodAreaExpanded.setCounty("county");
+        floodAreaExpanded.setCurrentWarning("current_warning");
+        floodAreaExpanded.setDescription("description");
+        floodAreaExpanded.setEaAreaName("ea_area_name");
+        floodAreaExpanded.setEaRegionName("ea_region_name");
+        floodAreaExpanded.setFwdCode("fwd_code");
+        floodAreaExpanded.setId("id");
+        floodAreaExpanded.setLabel("label");
+        floodAreaExpanded.setLat(1f);
+        floodAreaExpanded.setLon(2f);
+        floodAreaExpanded.setNotation("notation");
+        floodAreaExpanded.setPolygon("polygon");
+        floodAreaExpanded.setQuickDialNumber("quick_dial_number");
+        floodAreaExpanded.setRiverOrSea("river_or_sea");
+        floodAreaExpanded.setType(new String[]{"type"});
+
+        Assert.assertEquals("county", floodAreaExpanded.getCounty());
+        Assert.assertEquals("current_warning", floodAreaExpanded.getCurrentWarning());
+        Assert.assertEquals("description", floodAreaExpanded.getDescription());
+        Assert.assertEquals("ea_area_name", floodAreaExpanded.getEaAreaName());
+        Assert.assertEquals("ea_region_name", floodAreaExpanded.getEaRegionName());
+        Assert.assertEquals("fwd_code", floodAreaExpanded.getFwdCode());
+        Assert.assertEquals("id", floodAreaExpanded.getId());
+        Assert.assertEquals("label", floodAreaExpanded.getLabel());
+        Assert.assertEquals(1f, floodAreaExpanded.getLat());
+        Assert.assertEquals(2f, floodAreaExpanded.getLon());
+        Assert.assertEquals("notation", floodAreaExpanded.getNotation());
+        Assert.assertEquals("polygon", floodAreaExpanded.getPolygon());
+        Assert.assertEquals("quick_dial_number", floodAreaExpanded.getQuickDialNumber());
+        Assert.assertEquals("river_or_sea", floodAreaExpanded.getRiverOrSea());
+        Assert.assertEquals("type", floodAreaExpanded.getType()[0]);
+    }
+
     private static final String FLOOD_AREA_EXPANDED = "{ \n" +
             "      \"@id\" : \"http://environment.data.gov.uk/flood-monitoring/id/floodAreas/031WAF114\" ,\n" +
             "      \"county\" : \"Shropshire\" ,\n" +
