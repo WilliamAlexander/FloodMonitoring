@@ -8,4 +8,9 @@ android:
     
 script:
   - ./gradlew test --continue
+  
+before_install:
+  - pip install codecov
+after_success:
+  - codecov
 
