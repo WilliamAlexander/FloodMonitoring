@@ -51,11 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ForecastRiskTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ForecastRiskTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/ForecastRiskTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21875">
+            <state vertical-scroll-proportion="0.0">
               <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThreeDayForecastTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/ThreeDayForecastTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1875">
+              <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1714,6 +1726,7 @@
         <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodAreaExpandedTests.java" />
         <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodWarningTests.java" />
         <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/ForecastRiskTests.java" />
+        <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/ThreeDayForecastTests.java" />
       </list>
     </option>
   </component>
@@ -1862,7 +1875,7 @@
     <property name="android.project.structure.last.selected" value="library" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
-  <component name="RunManager" selected="JUnit.eu.fiskur.floodmonitoringapi in library">
+  <component name="RunManager" selected="JUnit.ThreeDayForecastTests">
     <configuration default="false" name="QuickHulkTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <option name="TESTING_TYPE" value="2" />
@@ -1882,17 +1895,6 @@
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
       <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
       <method />
-    </configuration>
-    <configuration default="false" name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="library" />
-      <setting name="path" value="file://$PROJECT_DIR$/library/build.gradle" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/library" />
-      <setting name="debug" value="false" />
-      <method>
-        <option name="Make" enabled="false" />
-      </method>
     </configuration>
     <configuration default="false" name="eu.fiskur.floodmonitoringapi in library" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1958,6 +1960,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="eu.fiskur.floodmonitoringapi" />
       <option name="MAIN_CLASS_NAME" value="eu.fiskur.floodmonitoringapi.FloodAreaExpandedTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="ThreeDayForecastTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="eu.fiskur.floodmonitoringapi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="library" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="eu.fiskur.floodmonitoringapi" />
+      <option name="MAIN_CLASS_NAME" value="eu.fiskur.floodmonitoringapi.ThreeDayForecastTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -2159,18 +2187,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Android Tests.ApplicationTest" />
       <item index="1" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
-      <item index="2" class="java.lang.String" itemvalue="Groovy.build" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.ThreeDayForecastTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
-        <item index="3" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
-        <item index="4" class="java.lang.String" itemvalue="Groovy.build" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ThreeDayForecastTests" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
+        <item index="4" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
@@ -2198,7 +2226,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="873" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2223,7 +2251,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37195995" sideWeight="0.765748" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32893" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -2365,8 +2393,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/ForecastRiskTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21875">
+        <state vertical-scroll-proportion="0.0">
           <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/ThreeDayForecastTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1875">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
