@@ -45,6 +45,7 @@ public class QuickHull {
         return points;
     }
 
+
     public ArrayList<LatLng> convertToLatLng(List<Point> points, Projection projection){
         ArrayList<LatLng> coords = new ArrayList<LatLng>();
 
