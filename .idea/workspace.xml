@@ -29,11 +29,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FloodAreaExpandedTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FloodAreaExpandedTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodAreaExpandedTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9375">
-              <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FloodWarningTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodWarningTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.78125">
+              <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/library/src/main/java/eu/fiskur/floodmonitoringapi/alerts/FloodWarning.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="31" />
+              <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
               <folding>
                 <element signature="e#1332#1333#0" expanded="true" />
                 <element signature="e#1364#1365#0" expanded="true" />
@@ -1690,6 +1700,7 @@
         <option value="$PROJECT_DIR$/library/src/androidTest/java/eu/fiskur/floodmonitoringapi/QuickHulkTests.java" />
         <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/PojoTests.java" />
         <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodAreaExpandedTests.java" />
+        <option value="$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodWarningTests.java" />
       </list>
     </option>
   </component>
@@ -1838,7 +1849,7 @@
     <property name="android.project.structure.last.selected" value="library" />
     <property name="android.project.structure.proportion" value="0.15" />
   </component>
-  <component name="RunManager" selected="JUnit.FloodAreaExpandedTests">
+  <component name="RunManager" selected="JUnit.eu.fiskur.floodmonitoringapi in library">
     <configuration default="false" name="QuickHulkTests" type="AndroidTestRunConfigurationType" factoryName="Android Tests" temporary="true" nameIsGenerated="true">
       <module name="library" />
       <option name="TESTING_TYPE" value="2" />
@@ -2142,8 +2153,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.eu.fiskur.floodmonitoringapi in library" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.FloodAreaExpandedTests.testFloodAreaExpanded" />
         <item index="3" class="java.lang.String" itemvalue="Android Tests.QuickHulkTests" />
         <item index="4" class="java.lang.String" itemvalue="Groovy.build" />
@@ -2286,17 +2297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/src/main/java/eu/fiskur/floodmonitoringapi/alerts/FloodWarning.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="31" />
-          <folding>
-            <element signature="e#1332#1333#0" expanded="true" />
-            <element signature="e#1364#1365#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/library/src/main/java/eu/fiskur/floodmonitoringapi/alerts/FloodAreaExpanded.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2323,8 +2323,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodAreaExpandedTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9375">
-          <caret line="66" column="65" selection-start-line="66" selection-start-column="65" selection-end-line="66" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/main/java/eu/fiskur/floodmonitoringapi/alerts/FloodWarning.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="144" column="16" selection-start-line="144" selection-start-column="16" selection-end-line="144" selection-end-column="16" />
+          <folding>
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1364#1365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/src/test/java/eu/fiskur/floodmonitoringapi/FloodWarningTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78125">
+          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
