@@ -1,5 +1,5 @@
 # FloodMonitoring 
-[![Release](https://jitpack.io/v/fiskurgit/FloodMonitoring.svg)](https://jitpack.io/#fiskurgit/FloodMonitoring) [![Build Status](https://api.travis-ci.org/fiskurgit/FloodMonitoring.svg?branch=master)](https://travis-ci.org/fiskurgit/FloodMonitoring)
+[![Release](https://jitpack.io/v/fiskurgit/FloodMonitoring.svg)](https://jitpack.io/#fiskurgit/FloodMonitoring) [![Build Status](https://api.travis-ci.org/fiskurgit/FloodMonitoring.svg?branch=master)](https://travis-ci.org/fiskurgit/FloodMonitoring) [![codecov.io](https://codecov.io/github/fiskurgit/FloodMonitoring/coverage.svg?branch=master)](https://codecov.io/github/fiskurgit/FloodMonitoring?branch=master)
 
 Android library for the gov.uk Flood Monitoring API: http://environment.data.gov.uk/flood-monitoring/doc/reference
 
