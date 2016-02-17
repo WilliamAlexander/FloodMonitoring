@@ -186,6 +186,23 @@ public class PojoTests {
     Assert.assertEquals("town", stationOverview.getTown());
     Assert.assertEquals("wiskiID", stationOverview.getWiskiID());
 
+    String stationOverviewToString = "@id: id\n"
+        + "RLOIid: RLOIid\n"
+        + "catchmentName: catchmentName\n"
+        + "dateOpened: dateOpened\n"
+        + "eee: 1\n"
+        + "label: label\n"
+        + "@id: id\n"
+        + "\n"
+        + "nnn: 1\n"
+        + "notation: notation\n"
+        + "riverName: riverName\n"
+        + "stageScale: stageScale\n"
+        + "stationReference: stationReference\n"
+        + "town: town\n"
+        + "wiskiID: wiskiID\n";
+    Assert.assertEquals(stationOverviewToString, stationOverview.toString());
+
   }
 
   @Test
