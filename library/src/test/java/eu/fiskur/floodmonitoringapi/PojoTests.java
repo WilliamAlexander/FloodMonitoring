@@ -52,6 +52,14 @@ public class PojoTests {
     Assert.assertEquals("type", measure.getType()[0]);
     Assert.assertEquals("valueType", measure.getValueType());
 
+    String measureToString = "@id: id\n"
+        + "parameter: parameter\n"
+        + "parameterName: parameterName\n"
+        + "period: 1.0\n"
+        + "qualifier: qualifier\n"
+        + "unitName: unitName\n";
+    Assert.assertEquals(measureToString, measure.toString());
+
     Assert.assertEquals("", new Measure().toString());
 
   }
