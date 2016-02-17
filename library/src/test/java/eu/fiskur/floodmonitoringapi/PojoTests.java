@@ -26,11 +26,13 @@ public class PojoTests {
     measure.setQualifier("qualifier");
     measure.setUnitName("unitName");
     measure.setLabel("label");
-    //Unknown type: Reading measure.setLatestReading(...);
+    Reading reading = new Reading();
+    reading.setId("id");
+    measure.setLatestReading(reading);
     measure.setNotation("notation");
     measure.setStation("station");
     measure.setStationReference("stationReference");
-    //Unknown type: String[] measure.setType(...);
+    measure.setType(new String[]{"type"});
     measure.setValueType("valueType");
 
     Assert.assertEquals("id", measure.getId());
@@ -40,11 +42,11 @@ public class PojoTests {
     Assert.assertEquals("qualifier", measure.getQualifier());
     Assert.assertEquals("unitName", measure.getUnitName());
     Assert.assertEquals("label", measure.getLabel());
-    //Unknown type: Reading measure.getLatestReading();
+    Assert.assertEquals("id", measure.getLatestReading().getId());
     Assert.assertEquals("notation", measure.getNotation());
     Assert.assertEquals("station", measure.getStation());
     Assert.assertEquals("stationReference", measure.getStationReference());
-    //Unknown type: String[] measure.getType();
+    Assert.assertEquals("type", measure.getType()[0]);
     Assert.assertEquals("valueType", measure.getValueType());
 
   }
