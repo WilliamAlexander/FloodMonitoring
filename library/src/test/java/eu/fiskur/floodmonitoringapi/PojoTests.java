@@ -293,6 +293,12 @@ public class PojoTests {
     Assert.assertTrue(floodWarning.isHeader());
     Assert.assertEquals("headerLabel", floodWarning.getHeaderLabel());
 
+    //Comparitor:
+    FloodWarning another = new FloodWarning();
+    another.setSeverityLevel(3);
+    Assert.assertEquals(-2, floodWarning.compareTo(another));
+    Assert.assertEquals(-2, FloodWarning.WarningItemComparator.compare(floodWarning, another));
+
   }
 
   @Test
