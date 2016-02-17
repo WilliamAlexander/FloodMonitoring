@@ -346,5 +346,12 @@ public class PojoTests {
     Assert.assertEquals("label", threeDayForecast.getLabel());
     Assert.assertEquals("type", threeDayForecast.getType());
     Assert.assertEquals("id", threeDayForecast.getForecastRisk().get(0).getId());
+
+    String forecastToString = "@id: id\n"
+        + "forecastSummary: forecastSummary\n"
+        + "issueDatetime: issueDatetime\n"
+        + "type: type\n";
+    Assert.assertEquals(forecastToString, threeDayForecast.toString());
+    Assert.assertEquals("", new ThreeDayForecast().toString());
   }
 }
