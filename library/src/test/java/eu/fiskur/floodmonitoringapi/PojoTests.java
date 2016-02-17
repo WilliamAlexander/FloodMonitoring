@@ -11,6 +11,8 @@ import eu.fiskur.floodmonitoringapi.stations.Reading;
 import eu.fiskur.floodmonitoringapi.stations.StageScale;
 import eu.fiskur.floodmonitoringapi.stations.StationDetail;
 import eu.fiskur.floodmonitoringapi.stations.StationOverview;
+import java.util.ArrayList;
+import java.util.List;
 import junit.framework.Assert;
 
 import org.junit.Test;
@@ -152,8 +154,14 @@ public class PojoTests {
     stationOverview.setDateOpened("dateOpened");
     stationOverview.setDatumOffset(1f);
     stationOverview.setEee(1);
-    //Unknown type: RemedialStringType stationOverview.setLabel(...);
-    //Unknown type: List<Measure> stationOverview.setMeasures(...);
+    RemedialStringType remedialString = new RemedialStringType();
+    remedialString.setLabel("label");
+    stationOverview.setLabel(remedialString);
+    Measure measure = new Measure();
+    measure.setId("id");
+    List<Measure> measures = new ArrayList<>();
+    measures.add(measure);
+    stationOverview.setMeasures(measures);
     stationOverview.setNnn(1);
     stationOverview.setNotation("notation");
     stationOverview.setRiverName("riverName");
@@ -168,8 +176,8 @@ public class PojoTests {
     Assert.assertEquals("dateOpened", stationOverview.getDateOpened());
     Assert.assertEquals(1f, stationOverview.getDatumOffset());
     Assert.assertEquals(1, stationOverview.getEee().intValue());
-    //Unknown type: RemedialStringType stationOverview.getLabel();
-    //Unknown type: List<Measure> stationOverview.getMeasures();
+    Assert.assertEquals("label", stationOverview.getLabel().getLabel());
+    Assert.assertEquals("id", stationOverview.getMeasures().get(0).getId());
     Assert.assertEquals(1, stationOverview.getNnn().intValue());
     Assert.assertEquals("notation", stationOverview.getNotation());
     Assert.assertEquals("riverName", stationOverview.getRiverName());
@@ -196,7 +204,7 @@ public class PojoTests {
     floodAreaExpanded.setPolygon("polygon");
     floodAreaExpanded.setQuickDialNumber("quickDialNumber");
     floodAreaExpanded.setRiverOrSea("riverOrSea");
-    //Unknown type: String[] floodAreaExpanded.setType(...);
+    floodAreaExpanded.setType(new String[] { "type" });
     floodAreaExpanded.setCounty("county");
 
     Assert.assertEquals("id", floodAreaExpanded.getId());
@@ -212,7 +220,7 @@ public class PojoTests {
     Assert.assertEquals("polygon", floodAreaExpanded.getPolygon());
     Assert.assertEquals("quickDialNumber", floodAreaExpanded.getQuickDialNumber());
     Assert.assertEquals("riverOrSea", floodAreaExpanded.getRiverOrSea());
-    //Unknown type: String[] floodAreaExpanded.getType();
+    Assert.assertEquals("type", floodAreaExpanded.getType()[0]);
     Assert.assertEquals("county", floodAreaExpanded.getCounty());
 
   }
@@ -224,7 +232,9 @@ public class PojoTests {
     floodWarning.setDescription("description");
     floodWarning.setEaAreaName("eaAreaName");
     floodWarning.setEaRegionName("eaRegionName");
-    //Unknown type: FloodAreaExpanded floodWarning.setFloodArea(...);
+    FloodAreaExpanded floodAreaExpanded = new FloodAreaExpanded();
+    floodAreaExpanded.setId("id");
+    floodWarning.setFloodArea(floodAreaExpanded);
     floodWarning.setFloodAreaID("floodAreaID");
     floodWarning.setIsTidal(true);
     floodWarning.setLcounty("lcounty");
@@ -241,7 +251,7 @@ public class PojoTests {
     Assert.assertEquals("description", floodWarning.getDescription());
     Assert.assertEquals("eaAreaName", floodWarning.getEaAreaName());
     Assert.assertEquals("eaRegionName", floodWarning.getEaRegionName());
-    //Unknown type: FloodAreaExpanded floodWarning.getFloodArea();
+    Assert.assertEquals("id", floodWarning.getFloodArea().getId());
     Assert.assertEquals("floodAreaID", floodWarning.getFloodAreaID());
     Assert.assertTrue(floodWarning.getIsTidal());
     Assert.assertEquals("lcounty", floodWarning.getLcounty());
@@ -285,7 +295,11 @@ public class PojoTests {
     threeDayForecast.setIssueDatetime("issueDatetime");
     threeDayForecast.setLabel("label");
     threeDayForecast.setType("type");
-    //Unknown type: List<ForecastRisk> threeDayForecast.setForecastRisk(...);
+    ForecastRisk risk = new ForecastRisk();
+    risk.setId("id");
+    List<ForecastRisk> forecastRisks = new ArrayList<>();
+    forecastRisks.add(risk);
+    threeDayForecast.setForecastRisk(forecastRisks);
 
     Assert.assertEquals("id", threeDayForecast.getId());
     Assert.assertEquals("day1image", threeDayForecast.getDay1image());
@@ -296,7 +310,6 @@ public class PojoTests {
     Assert.assertEquals("issueDatetime", threeDayForecast.getIssueDatetime());
     Assert.assertEquals("label", threeDayForecast.getLabel());
     Assert.assertEquals("type", threeDayForecast.getType());
-    //Unknown type: List<ForecastRisk> threeDayForecast.getForecastRisk();
-
+    Assert.assertEquals("id", threeDayForecast.getForecastRisk().get(0).getId());
   }
 }
