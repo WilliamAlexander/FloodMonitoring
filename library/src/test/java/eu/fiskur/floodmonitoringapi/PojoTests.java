@@ -52,6 +52,8 @@ public class PojoTests {
     Assert.assertEquals("type", measure.getType()[0]);
     Assert.assertEquals("valueType", measure.getValueType());
 
+    Assert.assertEquals("", new Measure().toString());
+
   }
 
   @Test
