@@ -203,6 +203,8 @@ public class PojoTests {
         + "wiskiID: wiskiID\n";
     Assert.assertEquals(stationOverviewToString, stationOverview.toString());
 
+    Assert.assertEquals("", new StationOverview().toString());
+
   }
 
   @Test
