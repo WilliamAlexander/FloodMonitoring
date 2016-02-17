@@ -4,6 +4,7 @@ import eu.fiskur.floodmonitoringapi.alerts.FloodAreaExpanded;
 import eu.fiskur.floodmonitoringapi.alerts.FloodWarning;
 import eu.fiskur.floodmonitoringapi.alerts.ForecastRisk;
 import eu.fiskur.floodmonitoringapi.alerts.ThreeDayForecast;
+import eu.fiskur.floodmonitoringapi.deserializers.RemedialStringType;
 import eu.fiskur.floodmonitoringapi.stations.Measure;
 
 import eu.fiskur.floodmonitoringapi.stations.Reading;
@@ -32,7 +33,7 @@ public class PojoTests {
     measure.setNotation("notation");
     measure.setStation("station");
     measure.setStationReference("stationReference");
-    measure.setType(new String[]{"type"});
+    measure.setType(new String[] { "type" });
     measure.setValueType("valueType");
 
     Assert.assertEquals("id", measure.getId());
@@ -71,18 +72,21 @@ public class PojoTests {
     StageScale stageScale = new StageScale();
     stageScale.setId("id");
     stageScale.setDatum(1f);
-    //Unknown type: Reading stageScale.setHighestRecent(...);
-    //Unknown type: Reading stageScale.setMaxOnRecord(...);
-    //Unknown type: Reading stageScale.setMinOnRecord(...);
+
+    Reading reading = new Reading();
+    reading.setId("id");
+    stageScale.setHighestRecent(reading);
+    stageScale.setMaxOnRecord(reading);
+    stageScale.setMinOnRecord(reading);
     stageScale.setScaleMax(1f);
     stageScale.setTypicalRangeHigh(1f);
     stageScale.setTypicalRangeLow(1f);
 
     Assert.assertEquals("id", stageScale.getId());
     Assert.assertEquals(1f, stageScale.getDatum());
-    //Unknown type: Reading stageScale.getHighestRecent();
-    //Unknown type: Reading stageScale.getMaxOnRecord();
-    //Unknown type: Reading stageScale.getMinOnRecord();
+    Assert.assertEquals("id", stageScale.getHighestRecent().getId());
+    Assert.assertEquals("id", stageScale.getMaxOnRecord().getId());
+    Assert.assertEquals("id", stageScale.getMinOnRecord().getId());
     Assert.assertEquals(1f, stageScale.getScaleMax());
     Assert.assertEquals(1f, stageScale.getTypicalRangeHigh());
     Assert.assertEquals(1f, stageScale.getTypicalRangeLow());
@@ -99,17 +103,23 @@ public class PojoTests {
     stationDetail.setEaAreaName("eaAreaName");
     stationDetail.setEaRegionName("eaRegionName");
     stationDetail.setEasting(1f);
-    //Unknown type: RemedialStringType stationDetail.setLabel(...);
+    RemedialStringType remedialString = new RemedialStringType();
+    remedialString.setLabel("label");
+    stationDetail.setLabel(remedialString);
     stationDetail.setLat(1f);
     stationDetail.setLon(1f);
-    //Unknown type: Measure[] stationDetail.setMeasures(...);
+    Measure measure = new Measure();
+    measure.setId("id");
+    Measure[] measures = new Measure[]{measure};
+    stationDetail.setMeasures(measures);
     stationDetail.setNorthing(1f);
     stationDetail.setNotation("notation");
     stationDetail.setRiverName("riverName");
-    //Unknown type: StageScale stationDetail.setStageScale(...);
+    StageScale stageScale = new StageScale();
+    stageScale.setId("id");
+    stationDetail.setStageScale(stageScale);
     stationDetail.setStationReference("stationReference");
     stationDetail.setTown("town");
-    //Unknown type: RemedialStringType stationDetail.setType(...);
     stationDetail.setWiskiID("wiskiID");
 
     Assert.assertEquals("id", stationDetail.getId());
@@ -119,17 +129,16 @@ public class PojoTests {
     Assert.assertEquals("eaAreaName", stationDetail.getEaAreaName());
     Assert.assertEquals("eaRegionName", stationDetail.getEaRegionName());
     Assert.assertEquals(1f, stationDetail.getEasting());
-    //Unknown type: RemedialStringType stationDetail.getLabel();
+    Assert.assertEquals("label", stationDetail.getLabel().getLabel());
     Assert.assertEquals(1f, stationDetail.getLat());
     Assert.assertEquals(1f, stationDetail.getLon());
-    //Unknown type: Measure[] stationDetail.getMeasures();
+    Assert.assertEquals("id", stationDetail.getMeasures()[0].getId());
     Assert.assertEquals(1f, stationDetail.getNorthing());
     Assert.assertEquals("notation", stationDetail.getNotation());
     Assert.assertEquals("riverName", stationDetail.getRiverName());
-    //Unknown type: StageScale stationDetail.getStageScale();
+    Assert.assertEquals("id", stationDetail.getStageScale().getId());
     Assert.assertEquals("stationReference", stationDetail.getStationReference());
     Assert.assertEquals("town", stationDetail.getTown());
-    //Unknown type: RemedialStringType stationDetail.getType();
     Assert.assertEquals("wiskiID", stationDetail.getWiskiID());
 
   }
