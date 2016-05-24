@@ -25,7 +25,7 @@ public class GsonAlertsTests {
     public void singleAlertGSONTest() {
         Gson gson = GSONProvider.getRestGson();
         FloodWarning warning = gson.fromJson(AN_ALERT, FloodWarning.class);
-        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floods/93474", warning.getId());
+        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floods/93474", warning.id);
     }
 
     private static final String AN_ALERT = "{ \n" +

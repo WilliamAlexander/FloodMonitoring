@@ -30,7 +30,7 @@ public class GsonStationsTests {
         List<StationOverview> stations = gson.fromJson(STATIONS_BY_LOCATION, new TypeToken<List<StationOverview>>() {
         }.getType());
         StationOverview overview = stations.get(0);
-        assertEquals(2, overview.getMeasures().size());
+        assertEquals(2, overview.measures.size());
     }
 
 
@@ -41,19 +41,19 @@ public class GsonStationsTests {
         List<StationOverview> stations = gson.fromJson(STATIONS_BY_LOCATION, new TypeToken<List<StationOverview>>() {
         }.getType());
         StationOverview overview = stations.get(0);
-        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/stations/690138", overview.getId());
-        assertEquals("5116", overview.getRLOIid());
-        assertEquals("Northern Manchester", overview.getCatchmentName());
-        assertEquals("1998-05-07", overview.getDateOpened());
-        assertEquals(381200, overview.getEee().intValue());
-        assertEquals("Rawtenstall", overview.getLabel().toString());
+        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/stations/690138", overview.id);
+        assertEquals("5116", overview.RLOIid);
+        assertEquals("Northern Manchester", overview.catchmentName);
+        assertEquals("1998-05-07", overview.dateOpened);
+        assertEquals(381200, overview.eee.intValue());
+        assertEquals("Rawtenstall", overview.label.toString());
     }
 
     @Test
     public void multipleMeasuresTest(){
         Gson gson = GSONProvider.getRestGson();
         StationDetail station = gson.fromJson(STAION_THREE_MEASURES, StationDetail.class);
-        assertEquals(3, station.getMeasures().length);
+        assertEquals(3, station.measures.length);
     }
 
 
@@ -61,27 +61,27 @@ public class GsonStationsTests {
     public void stationTest(){
         Gson gson = GSONProvider.getRestGson();
         StationDetail station = gson.fromJson(STATION, StationDetail.class);
-        assertEquals(1, station.getMeasures().length);
+        assertEquals(1, station.measures.length);
     }
 
     @Test
     public void stationDetailFieldsTest(){
         Gson gson = GSONProvider.getRestGson();
         StationDetail station = gson.fromJson(STATION, StationDetail.class);
-        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/stations/690142", station.getId());
-        assertEquals("5082", station.getRLOIid());
-        assertEquals("Northern Manchester", station.getCatchmentName());
-        assertEquals("1998-07-28", station.getDateOpened());
-        assertEquals("Little Bridge", station.getLabel().toString());
+        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/stations/690142", station.id);
+        assertEquals("5082", station.RLOIid);
+        assertEquals("Northern Manchester", station.catchmentName);
+        assertEquals("1998-07-28", station.dateOpened);
+        assertEquals("Little Bridge", station.label.toString());
     }
 
     @Test
     public void measureTest(){
         Gson gson = GSONProvider.getRestGson();
         StationDetail station = gson.fromJson(STATION, StationDetail.class);
-        Measure measure = station.getMeasures()[0];
-        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/measures/690142-level-stage-i-15_min-m", measure.getId());
-        assertEquals("Little Br Helmshore - level-stage-i-15_min-m", measure.getLabel());
+        Measure measure = station.measures[0];
+        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/measures/690142-level-stage-i-15_min-m", measure.id);
+        assertEquals("Little Br Helmshore - level-stage-i-15_min-m", measure.label);
     }
 
     @Test

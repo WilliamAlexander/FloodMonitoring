@@ -17,7 +17,7 @@ public class ReadingDeserializer implements JsonDeserializer<Reading> {
         if (json.isJsonPrimitive()){
             //String
             Reading reading = new Reading();
-            reading.setId(json.getAsString());
+            reading.id = json.getAsString();
             return reading;
         }else{
             return GSONProvider.getGSON().fromJson(json, Reading.class);

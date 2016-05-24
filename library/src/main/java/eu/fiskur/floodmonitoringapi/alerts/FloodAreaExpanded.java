@@ -3,142 +3,22 @@ package eu.fiskur.floodmonitoringapi.alerts;
 import com.google.gson.annotations.SerializedName;
 
 public class FloodAreaExpanded {
-    @SerializedName("@id") String id;
-    String county;
-    String currentWarning;
-    String description;
-    String eaAreaName;
-    String eaRegionName;
+    public @SerializedName("@id") String id;
+    public String county;
+    public String currentWarning;
+    public String description;
+    public String eaAreaName;
+    public String eaRegionName;
     //envelope
-    String fwdCode;
-    String label;
-    Float lat;
-    @SerializedName("long")Float lon;
-    String notation;
-    String polygon;
-    String quickDialNumber;
-    String riverOrSea;
-    String[] type;
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getCurrentWarning() {
-        return currentWarning;
-    }
-
-    public void setCurrentWarning(String currentWarning) {
-        this.currentWarning = currentWarning;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getEaAreaName() {
-        return eaAreaName;
-    }
-
-    public void setEaAreaName(String eaAreaName) {
-        this.eaAreaName = eaAreaName;
-    }
-
-    public String getEaRegionName() {
-        return eaRegionName;
-    }
-
-    public void setEaRegionName(String eaRegionName) {
-        this.eaRegionName = eaRegionName;
-    }
-
-    public String getFwdCode() {
-        return fwdCode;
-    }
-
-    public void setFwdCode(String fwdCode) {
-        this.fwdCode = fwdCode;
-    }
-
-    public String getLabel() {
-        return label;
-    }
-
-    public void setLabel(String label) {
-        this.label = label;
-    }
-
-    public Float getLat() {
-        return lat;
-    }
-
-    public void setLat(Float lat) {
-        this.lat = lat;
-    }
-
-    public Float getLon() {
-        return lon;
-    }
-
-    public void setLon(Float lon) {
-        this.lon = lon;
-    }
-
-    public String getNotation() {
-        return notation;
-    }
-
-    public void setNotation(String notation) {
-        this.notation = notation;
-    }
-
-    public String getPolygon() {
-        return polygon;
-    }
-
-    public void setPolygon(String polygon) {
-        this.polygon = polygon;
-    }
-
-    public String getQuickDialNumber() {
-        return quickDialNumber;
-    }
-
-    public void setQuickDialNumber(String quickDialNumber) {
-        this.quickDialNumber = quickDialNumber;
-    }
-
-    public String getRiverOrSea() {
-        return riverOrSea;
-    }
-
-    public void setRiverOrSea(String riverOrSea) {
-        this.riverOrSea = riverOrSea;
-    }
-
-    public String[] getType() {
-        return type;
-    }
-
-    public void setType(String[] type) {
-        this.type = type;
-    }
-
-    public String getCounty() {
-        return county;
-    }
-
-    public void setCounty(String county) {
-        this.county = county;
-    }
+    public String fwdCode;
+    public String label;
+    public Float lat;
+    public @SerializedName("long")Float lon;
+    public String notation;
+    public String polygon;
+    public String quickDialNumber;
+    public String riverOrSea;
+    public String[] type;
 }
 
 
