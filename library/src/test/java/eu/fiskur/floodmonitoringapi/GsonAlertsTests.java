@@ -13,21 +13,6 @@ import static org.junit.Assert.assertEquals;
 
 public class GsonAlertsTests {
 
-    @Test
-    public void alertsGSONTest() {
-        Gson gson = GSONProvider.getRestGson();
-        List<FloodWarning> warnings = gson.fromJson(FLOOD_ALERTS, new TypeToken<List<FloodWarning>>() {
-        }.getType());
-        assertEquals(11, warnings.size());
-    }
-
-    @Test
-    public void singleAlertGSONTest() {
-        Gson gson = GSONProvider.getRestGson();
-        FloodWarning warning = gson.fromJson(AN_ALERT, FloodWarning.class);
-        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floods/93474", warning.id);
-    }
-
     private static final String AN_ALERT = "{ \n" +
             "  \"@context\" : \"http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld\" ,\n" +
             "  \"meta\" : { \n" +
@@ -85,8 +70,7 @@ public class GsonAlertsTests {
             "    \"timeSeverityChanged\" : \"2015-11-28T16:12:00\" ,\n" +
             "    \"type\" : \"http://environment.data.gov.uk/flood-monitoring/def/core/FloodAlertOrWarning\"\n" +
             "  }\n" +
-            "}\n" +
-            "\n";
+            "}";
 
     private static final String FLOOD_ALERTS = "{ \n" +
             "  \"@context\" : \"http://environment.data.gov.uk/flood-monitoring/meta/context.jsonld\" ,\n" +
@@ -343,6 +327,20 @@ public class GsonAlertsTests {
             "    \"timeSeverityChanged\" : \"2015-12-04T15:30:00\"\n" +
             "  }\n" +
             "   ]\n" +
-            "}\n" +
-            "\n";
+            "}";
+
+    @Test
+    public void alertsGSONTest() {
+        Gson gson = GSONProvider.getRestGson();
+        List<FloodWarning> warnings = gson.fromJson(FLOOD_ALERTS, new TypeToken<List<FloodWarning>>() {
+        }.getType());
+        assertEquals(11, warnings.size());
+    }
+
+    @Test
+    public void singleAlertGSONTest() {
+        Gson gson = GSONProvider.getRestGson();
+        FloodWarning warning = gson.fromJson(AN_ALERT, FloodWarning.class);
+        assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floods/93474", warning.id);
+    }
 }

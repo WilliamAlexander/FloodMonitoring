@@ -9,28 +9,6 @@ import eu.fiskur.floodmonitoringapi.alerts.FloodAreaExpanded;
 
 public class FloodAreaExpandedTests {
 
-    @Test
-    public void testFloodAreaExpanded(){
-        Gson gson = GSONProvider.getRestGson();
-        FloodAreaExpanded floodAreaExpanded = gson.fromJson(FLOOD_AREA_EXPANDED, FloodAreaExpanded.class);
-
-        Assert.assertEquals("Shropshire", floodAreaExpanded.county);
-        Assert.assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floods/93474", floodAreaExpanded.currentWarning);
-        Assert.assertEquals("Severn Vyrnwy Confluence", floodAreaExpanded.description);
-        Assert.assertEquals("West", floodAreaExpanded.eaAreaName);
-        Assert.assertEquals("Midlands Region", floodAreaExpanded.eaRegionName);
-        Assert.assertEquals("031WAF114", floodAreaExpanded.fwdCode);
-        Assert.assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floodAreas/031WAF114", floodAreaExpanded.id);
-        Assert.assertEquals("Severn Vyrnwy Confluence", floodAreaExpanded.label);
-        Assert.assertEquals("031WAF114", floodAreaExpanded.notation);
-        Assert.assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floodAreas/031WAF114/polygon", floodAreaExpanded.polygon);
-        Assert.assertEquals("Severn Vyrnwy Confluence", floodAreaExpanded.description);
-        Assert.assertEquals("052317", floodAreaExpanded.quickDialNumber);
-        Assert.assertEquals("River Severn, River Vyrnwy", floodAreaExpanded.riverOrSea);
-        Assert.assertEquals(52.765503f, floodAreaExpanded.lat);
-        Assert.assertEquals(-2.9931457f, floodAreaExpanded.lon);
-    }
-
     private static final String FLOOD_AREA_EXPANDED = "{ \n" +
             "      \"@id\" : \"http://environment.data.gov.uk/flood-monitoring/id/floodAreas/031WAF114\" ,\n" +
             "      \"county\" : \"Shropshire\" ,\n" +
@@ -61,4 +39,26 @@ public class FloodAreaExpandedTests {
             "      \"riverOrSea\" : \"River Severn, River Vyrnwy\" ,\n" +
             "      \"type\" : [ \"http://environment.data.gov.uk/flood-monitoring/def/core/FloodAlertArea\", \"http://environment.data.gov.uk/flood-monitoring/def/core/FloodArea\" ]\n" +
             "    }";
+
+    @Test
+    public void testFloodAreaExpanded(){
+        Gson gson = GSONProvider.getRestGson();
+        FloodAreaExpanded floodAreaExpanded = gson.fromJson(FLOOD_AREA_EXPANDED, FloodAreaExpanded.class);
+
+        Assert.assertEquals("Shropshire", floodAreaExpanded.county);
+        Assert.assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floods/93474", floodAreaExpanded.currentWarning);
+        Assert.assertEquals("Severn Vyrnwy Confluence", floodAreaExpanded.description);
+        Assert.assertEquals("West", floodAreaExpanded.eaAreaName);
+        Assert.assertEquals("Midlands Region", floodAreaExpanded.eaRegionName);
+        Assert.assertEquals("031WAF114", floodAreaExpanded.fwdCode);
+        Assert.assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floodAreas/031WAF114", floodAreaExpanded.id);
+        Assert.assertEquals("Severn Vyrnwy Confluence", floodAreaExpanded.label);
+        Assert.assertEquals("031WAF114", floodAreaExpanded.notation);
+        Assert.assertEquals("http://environment.data.gov.uk/flood-monitoring/id/floodAreas/031WAF114/polygon", floodAreaExpanded.polygon);
+        Assert.assertEquals("Severn Vyrnwy Confluence", floodAreaExpanded.description);
+        Assert.assertEquals("052317", floodAreaExpanded.quickDialNumber);
+        Assert.assertEquals("River Severn, River Vyrnwy", floodAreaExpanded.riverOrSea);
+        Assert.assertEquals(52.765503f, floodAreaExpanded.lat);
+        Assert.assertEquals(-2.9931457f, floodAreaExpanded.lon);
+    }
 }

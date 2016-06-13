@@ -22,6 +22,7 @@ public class FloodMonitoring {
     private static final String BASE_URL = "http://environment.data.gov.uk/flood-monitoring/";
     private static FloodMonitoring instance = null;
     private FloodApiLogger floodApiLogger;
+    private FloodMonitoringRest rest;
 
     public synchronized static FloodMonitoring getInstance(){
         if(instance == null){
@@ -30,7 +31,7 @@ public class FloodMonitoring {
         return instance;
     }
 
-    private FloodMonitoringRest rest;
+
 
     private FloodMonitoring(){
         buildRest(false);
