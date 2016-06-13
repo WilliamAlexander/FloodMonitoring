@@ -1,8 +1,8 @@
 package eu.fiskur.floodmonitoringapi.deserializers;
 
 public class RemedialStringType {
-    String label = null;
-    String[] labelArray = null;
+    private String label = null;
+    private String[] labelArray = null;
 
     public String getLabel() {
         return label;

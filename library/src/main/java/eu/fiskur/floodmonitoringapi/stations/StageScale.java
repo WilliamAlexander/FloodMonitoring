@@ -2,8 +2,6 @@ package eu.fiskur.floodmonitoringapi.stations;
 
 import com.google.gson.annotations.SerializedName;
 
-import java.util.List;
-
 public class StageScale {
     public @SerializedName("@id") String id;
     public Float datum;

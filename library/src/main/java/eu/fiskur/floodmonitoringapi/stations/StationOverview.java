@@ -25,52 +25,6 @@ public class StationOverview {
 
     @Override
     public String toString() {
-        StringBuffer sb = new StringBuffer();
-        if(id != null){
-            sb.append("@id: " + id + "\n");
-        }
-        if(RLOIid != null){
-            sb.append("RLOIid: " + RLOIid + "\n");
-        }
-        if(catchmentName != null){
-            sb.append("catchmentName: " + catchmentName + "\n");
-        }
-        if(dateOpened != null){
-            sb.append("dateOpened: " + dateOpened + "\n");
-        }
-        if(eee != null){
-            sb.append("eee: " + eee + "\n");
-        }
-        if(label != null){
-            sb.append("label: " + label.toString() + "\n");
-        }
-        if(measures != null){
-            //todo
-            for(Measure measure : measures){
-                sb.append(measure.toString() + "\n");
-            }
-        }
-        if(nnn != null){
-            sb.append("nnn: " + nnn + "\n");
-        }
-        if(notation != null){
-            sb.append("notation: " + notation + "\n");
-        }
-        if(riverName != null){
-            sb.append("riverName: " + riverName + "\n");
-        }
-        if(stageScale != null){
-            sb.append("stageScale: " + stageScale + "\n");
-        }
-        if(stationReference != null){
-            sb.append("stationReference: " + stationReference + "\n");
-        }
-        if(town != null){
-            sb.append("town: " + town + "\n");
-        }
-        if(wiskiID != null){
-            sb.append("wiskiID: " + wiskiID + "\n");
-        }
-        return sb.toString();
+        return stationReference;
     }
 }

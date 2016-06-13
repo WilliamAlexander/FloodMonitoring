@@ -138,13 +138,11 @@ public class FloodMonitoring {
     }
 
     public Observable<List<Reading>> getReadings(String url, int count){
-        url+="/readings";
-        return rest.getReadings(url, 1, count);
+        return rest.getReadings(url + "/readings", 1, count);
     }
 
     public Observable<List<Reading>> getReadingsToday(String url){
-        url+="/readings";
-        return rest.getReadingsToday(url, 1, 1);
+        return rest.getReadingsToday(url + "/readings", 1, 1);
     }
 
     //end date is today
@@ -152,8 +150,7 @@ public class FloodMonitoring {
     public Observable<List<Reading>> getReadingsDays(String url, int days){
         String endDate = FloodUtils.getTodaysDate();
         String startDate = FloodUtils.getPreviousDate(days);
-        url+="/readings";
-        return rest.getReadingsDays(url, 1, startDate, endDate);
+        return rest.getReadingsDays(url + "/readings", 1, startDate, endDate);
     }
 
     public Observable<ResponseBody> getRawResponse(String url){

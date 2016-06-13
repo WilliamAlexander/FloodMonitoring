@@ -1,20 +1,12 @@
 package eu.fiskur.floodmonitoringapi;
 
 import com.google.android.gms.maps.model.LatLng;
-import com.squareup.okhttp.MediaType;
-import com.squareup.okhttp.Response;
-import com.squareup.okhttp.ResponseBody;
-
-import org.json.JSONException;
-import org.json.JSONObject;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import java.io.IOException;
 import java.util.List;
 
 import eu.fiskur.floodmonitoringapi.utilities.FloodUtils;
-import okio.BufferedSource;
 
 public class FloodUtilsTests {
 
